@@ -32,12 +32,6 @@ public class AdminPicShare {
 		List<AdminPicShareVO> list = service.getListPage(page, numberPerPage, keyword);
 		AdminPageInfoVO picPageInfo = service.getPageInfo(page, numberPerPage, keyword);
 		
-		// 값이 잘 들어오는지 확인.
-		for(AdminPicShareVO lists : list) {
-			System.out.println(lists);
-		}
-		System.out.println("");
-		
 		model.addAttribute("list", list);
 		model.addAttribute("picPageInfo", picPageInfo);
 		model.addAttribute("read", service.get(id));

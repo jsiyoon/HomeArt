@@ -36,7 +36,6 @@ public class DiscussionController {
 	@GetMapping("/masterpiece/{masterpiece_id")
 	public List<DiscussionVO> list(@PathVariable Integer masterpiece_id, HttpSession session) {
 		MemberVO loggedIn = (MemberVO) session.getAttribute("loggedInMember");
-		System.out.println("discussion 접근");
 		List<DiscussionVO> list = service.list(masterpiece_id);
 
 //		System.out.println("board/boardid : " + loggedIn);
