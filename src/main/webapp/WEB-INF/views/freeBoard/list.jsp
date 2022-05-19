@@ -25,7 +25,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col board-box">
-				<h2 class="text-center">자유게시판  뜰라나</h2>
+				<h2 class="text-center">자유게시판</h2>
 				<div class="table-admin">
 					<table class="table table-hover" style="margin-bottom: 0;">
 						<thead>
