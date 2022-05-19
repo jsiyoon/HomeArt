@@ -73,7 +73,7 @@ $(document).ready(function() {
 									</div>
 								</div>
 								
-								<div class="reply-button-container"></div>
+								<div class="reply-button-container"></div> //css설정 위함
 							</div>
 						</div>
 					<div>`);
@@ -87,9 +87,9 @@ $(document).ready(function() {
 						
 						$.ajax({
 							url : appRoot + "/reply/" + list[i].id,
-							type : "put",
+							type : "put", //데이터 수정
 							contentType : "application/json",
-							data : JSON.stringify(data),
+							data : JSON.stringify(data), //javascript언어 -> JSON언어로 변경.
 							complete : function(){
 								listReply();
 							}
@@ -179,7 +179,7 @@ $(document).ready(function() {
 		
 		$.ajax({
 			url : appRoot + "/reply/write",
-			type : "post",
+			type : "post", //데이터 추가
 			data : data,
 			success : function(){
 				//댓글창 reset
@@ -271,6 +271,8 @@ $(document).ready(function() {
 				<!-- 페이지 이동 (자유게시판 다른 글들 표시)-->
 				<div class="pageMove">
 				<div style="font-weight: bold; padding-bottom: 5px; font-size: 20px;">&lt;자유게시판의 다른글&gt;</div>
+				
+					<!-- 관리자 게시물 내 페이지 이동 -->
 					<c:if test="${freeBoard.isAdmin == 1 }">
 						<c:if test="${movePageAdmin[1] != null and movePageAdmin[1].board_id < freeBoard.board_id }">
 							<div class="pageInfo" style="padding-top: 8px;">
@@ -318,6 +320,8 @@ $(document).ready(function() {
 							</div>
 						</c:if>
 					</c:if>
+					
+					<!-- 비관리자 게시물 내 페이지 이동 -->
 					<c:if test="${freeBoard.isAdmin == 0 }">
 						<c:if test="${movePage[1] != null and movePage[1].board_id > freeBoard.board_id }">
 							<div class="pageInfo" style="padding-top: 8px;">

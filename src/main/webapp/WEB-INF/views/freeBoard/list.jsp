@@ -128,6 +128,7 @@
 					<div class="container-fluid ">
 						<!-- 버튼 - 글쓰기/작성 -->
 						<a class="btn btn-dark" type="button" href="${pageContext.request.contextPath}/freeBoard/post">글쓰기</a>
+						
 						<!-- 검색창 -->
 						<form class="d-flex">
 							<select class="form-control searchType" name="searchType">
@@ -150,7 +151,7 @@
 					  		<c:url value="/freeBoard/list" var="pageLink">
 					    		<c:param name="keyword" value="${param.keyword}"></c:param>
 					    		<c:param name="searchType" value="${param.searchType}"></c:param>
-					    		<c:param name="page" value="${pageInfo.leftPageNumber - 1 }"></c:param>
+					    		<c:param name="page" value="${pageInfo.leftPageNumber - 1 }"></c:param><!-- 맨 왼쪽 이전페이지로 넘어감 -->
 					    	</c:url>
 						    <li class="page-item">
 						      <a href="${pageLink }" aria-label="Previous">
@@ -174,7 +175,7 @@
 					    	<c:url value="/freeBoard/list" var="pageLink">
 					    		<c:param name="keyword" value="${param.keyword}"></c:param>
 					    		<c:param name="searchType" value="${param.searchType}"></c:param>
-					    		<c:param name="page" value="${pageInfo.rightPageNumber + 1 }"></c:param>
+					    		<c:param name="page" value="${pageInfo.rightPageNumber + 1 }"></c:param><!-- 페이징 맨 오른쪽 다음페이지로 넘어감 -->
 					    	</c:url>
 						    <li class="page-item">
 						      <a href="${pageLink }" aria-label="Next">

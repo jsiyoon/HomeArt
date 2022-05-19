@@ -51,8 +51,9 @@ public class FreeBoardController {
 		freeBoardVO freeBoard = service.get(id);
 		String[] fileNames = service.getFileNames(id);
 		
-		List<freeBoardVO> movePageAdmin = service.movePageAdmin(id);
-		List<freeBoardVO> movePage = service.movePage(id);
+		//게시물 내 페이지 이동위함
+		List<freeBoardVO> movePageAdmin = service.movePageAdmin(id); //관리자게시물 페이지넘기기위함
+		List<freeBoardVO> movePage = service.movePage(id); //일반회원 게시물 넘기기위함
 		
 		model.addAttribute("freeBoard", freeBoard);
 		model.addAttribute("fileNames", fileNames);
