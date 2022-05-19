@@ -278,7 +278,7 @@ $(document).ready(function() {
 							<div class="pageInfo" style="padding-top: 8px;">
 								<div class="d-flex arrow">
 									<i class="fas fa-arrow-up"></i>
-									<a class="pageLink pl" href="get?id=${movePage[1].board_id}">${movePageAdmin[1].title}</a>
+									<a class="pageLink pl" href="get?id=${movePageAdmin[1].board_id}">${movePageAdmin[1].title}</a>
 								</div>
 								<div class="postInfo">
 									<div>${movePageAdmin[1].nickName}</div>
@@ -290,7 +290,7 @@ $(document).ready(function() {
 							<div class="pageInfo" style="padding-top: 8px;">
 								<div class="d-flex arrow">
 									<i class="fas fa-arrow-up"></i>
-									<a class="pageLink pl" href="get?id=${movePageAdmin[0].board_id}" >${movePageAdmin[0].title}</a>
+									<a class="pageLink pl" href="get?id=${movePageAdmin[0].board_id}">${movePageAdmin[0].title}</a>
 								</div>
 								<div class="postInfo">
 									<div>${movePageAdmin[0].nickName}</div>
