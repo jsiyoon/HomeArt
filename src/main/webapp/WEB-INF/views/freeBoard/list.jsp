@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%@ taglib prefix="b" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="b" tagdir="/WEB-INF/tags" %><!-- homeart header, bottom 사용위함 -->
 
 <!DOCTYPE html>
 <html>
@@ -18,7 +18,7 @@
 <title>HomeArt</title>
 </head>
 <body>
-	<!-- header tag -->
+	<!-- homeart header tag -->
 	<b:navBar active="free"></b:navBar>
 
 <div class="contents-wrap">

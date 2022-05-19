@@ -200,7 +200,9 @@ $(document).ready(function() {
 <title>HomeArt</title>
 </head>
 <body>
+<!-- homeart header -->
 <b:navBar></b:navBar>
+
 <div class="contents-wrap">
 <!-- 글 내용 -->
 <div class="container">

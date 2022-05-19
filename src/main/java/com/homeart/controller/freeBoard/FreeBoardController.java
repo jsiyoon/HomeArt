@@ -30,7 +30,7 @@ public class FreeBoardController {
 			@RequestParam(value = "searchType", required = false) String searchType, 
 			@RequestParam(value = "keyword", required = false) String keyword, Model model) {
 		
-		Integer numberPerPage = 10; //한페이지 row수
+		Integer numberPerPage = 10; //한페이지 row는 10줄로 설정
 		
 		//게시물 목록
 		List<freeBoardVO> listAdmin = service.getList(searchType, keyword);

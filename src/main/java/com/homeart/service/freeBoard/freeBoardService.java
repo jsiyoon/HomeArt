@@ -124,7 +124,7 @@ public class freeBoardService {
 		return mapper.getAdminList(searchType, keyword);
 	}
 
-	//회원게시getList & pageInfo
+	//회원게시물 getList & pageInfo
 	public List<freeBoardVO> getList(Integer page, String searchType, String keyword, Integer numberPerPage) {
 		//sql에서 사용할 record 시작번호(0-index)
 		Integer from = (page-1) * 10;
